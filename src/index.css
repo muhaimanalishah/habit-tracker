@@ -128,3 +128,17 @@
     @apply font-sans;
     }
 }
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes indeterminate {
+  0% { left: -40%; width: 40%; }
+  50% { left: 35%; width: 50%; }
+  100% { left: 100%; width: 30%; }
+}
